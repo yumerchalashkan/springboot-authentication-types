@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="in-memory-authentication" />
+        <module name="basic-authentication" />
+        <module name="jwt-token-authentication" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="basic-authentication" target="17" />
+      <module name="in-memory-authentication" target="17" />
+      <module name="jwt-token-authentication" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="basic-authentication" options="-parameters" />
+      <module name="in-memory-authentication" options="-parameters" />
+      <module name="jwt-token-authentication" options="-parameters" />
+    </option>
+  </component>
+</project>
